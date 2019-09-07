@@ -1,0 +1,11 @@
+For this game you need to select one FFX character: Tidus, Yuna or Aaron
+Then you need to select the weapon: Sword, Magic wand or Shield
+Then you need to fight agains some enemies using the character that you selected and the weapon, some of the work better than others
+Enemies:
+	* Sin         (Strength: Tidus, Sword Wand Weakness: Yuna, Magic Wand)
+	* Lord Ochu   (Strength: Shield, Aaron Wand Weakness: Tidus, Sword )
+	* Spherimorph (Strength: Yuna, Magic Wand Weakness: Shield, Aaron)
+
+You have the option to flee or fight, but you must fight agains one enemy to end the program, if you select the Weakness of one boss
+you will win but if you use one strength of the boss you will die, if you selected one weakness or strength the program will tell you, 
+and let you change the character or the weapon one, if you selected them incorrectly you will also die
