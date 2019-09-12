@@ -6,7 +6,7 @@ def NewGame():
 
     if option == "Y" or option == "y":
         print("Game has started")
-        Characters_and_Weapons(characters, weapons)
+        Characters_and_Weapons()
     elif option == "N" or option == "n":
         print("Maybe next time, bye!")
         exit(0)
@@ -14,7 +14,7 @@ def NewGame():
         print("Incorrect option, please type Y or N")
         NewGame()
 #This function will allow the player to select the character and the weapon
-def Characters_and_Weapons(Character, Weapons):
+def Characters_and_Weapons():
     print("""
     Please select the character you will use to fight:
 
@@ -33,8 +33,9 @@ def Characters_and_Weapons(Character, Weapons):
     weapon_selection = input ("Type the number of the weapon you want: ")
     selection_CW(character_selection,weapon_selection) #Will calls the funtion that sets the values
 
+#This function will create the player 1 with the correct character and weapon
 def selection_CW (c_selection, w_selection):
-
+    player.clear()
     if c_selection == "1":
         player.append(characters[0])
     elif c_selection == "2":
@@ -42,18 +43,23 @@ def selection_CW (c_selection, w_selection):
     elif c_selection == "3":
         player.append(characters[2])
     else:
-        print('Incorrect value, please input a value from 1 to 3 to select the character')
+        print('Incorrect value, please input a value from 1 to 3 to select the character.')
+        print('Please do it again')
+        Characters_and_Weapons()
 
-    if c_selection == "1":
+    if w_selection == "1":
         player.append(weapons[0])
-    elif c_selection == "2":
+    elif w_selection == "2":
         player.append(weapons[1])
-    elif c_selection == "3":
+    elif w_selection == "3":
         player.append(weapons[2])
     else:
         print('Incorrect value, please input a value from 1 to 3 to select the weapon')
+        print('Please do it again')
+        Characters_and_Weapons()
 
     print(f"\nYou have selected the character {player[0]} and the weapon {player[1]}.")
+
 
 
 characters = ["Tidus", "Yuna", "Aaron"]
