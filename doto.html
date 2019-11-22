@@ -1,0 +1,1701 @@
+
+<!doctype html>
+<html lang="es">
+    <head >
+	<style type="text/css">.fb_dialog {left: 18px; z-index:1000;} iframe[data-testid="dialog_iframe"] { left:18px; right: 0 !important }</style>
+        <meta name="google-site-verification" content="OEJsxzh_Zz27Zf3WnlyrxPtWbehgTvfjcxMKbIANL14" />
+<script>
+    var require = {
+        "baseUrl": "https://doto.com.mx/pub/static/version1573793901/frontend/Sm/smarket/es_MX"
+    };
+</script>
+        <meta charset="utf-8"/>
+<meta name="robots" content="INDEX,FOLLOW"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"cf29524d6e",applicationID:"419333178"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1130.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+<title>Crear nueva cuenta de cliente</title>
+<link  rel="stylesheet" type="text/css"  media="all" href="https://doto.com.mx/pub/static/version1573793901/frontend/Sm/smarket/es_MX/mage/calendar.css" />
+<link  rel="stylesheet" type="text/css"  media="all" href="https://doto.com.mx/pub/static/version1573793901/frontend/Sm/smarket/es_MX/css/styles-m.css" />
+<link  rel="stylesheet" type="text/css"  media="all" href="https://doto.com.mx/pub/static/version1573793901/frontend/Sm/smarket/es_MX/css/ytextend.css" />
+<link  rel="stylesheet" type="text/css"  media="all" href="https://doto.com.mx/pub/static/version1573793901/frontend/Sm/smarket/es_MX/css/yttheme.css" />
+<link  rel="stylesheet" type="text/css"  media="all" href="https://doto.com.mx/pub/static/version1573793901/frontend/Sm/smarket/es_MX/css/css-fix.css" />
+<link  rel="stylesheet" type="text/css"  media="all" href="https://doto.com.mx/pub/static/version1573793901/frontend/Sm/smarket/es_MX/css/custom.css" />
+<link  rel="stylesheet" type="text/css"  media="all" href="https://doto.com.mx/pub/static/version1573793901/frontend/Sm/smarket/es_MX/Magefan_Blog/css/blog-custom.css" />
+<link  rel="stylesheet" type="text/css"  media="all" href="https://doto.com.mx/pub/static/version1573793901/frontend/Sm/smarket/es_MX/Searchanise_SearchAutocomplete/css/se.css" />
+<link  rel="stylesheet" type="text/css"  media="screen and (min-width: 768px)" href="https://doto.com.mx/pub/static/version1573793901/frontend/Sm/smarket/es_MX/css/styles-l.css" />
+<link  rel="stylesheet" type="text/css"  media="print" href="https://doto.com.mx/pub/static/version1573793901/frontend/Sm/smarket/es_MX/css/print.css" />
+<script  type="text/javascript"  src="https://doto.com.mx/pub/static/version1573793901/frontend/Sm/smarket/es_MX/requirejs/require.js"></script>
+<script  type="text/javascript"  src="https://doto.com.mx/pub/static/version1573793901/frontend/Sm/smarket/es_MX/mage/requirejs/mixins.js"></script>
+<script  type="text/javascript"  src="https://doto.com.mx/pub/static/version1573793901/frontend/Sm/smarket/es_MX/requirejs-config.js"></script>
+<script  type="text/javascript"  src="https://doto.com.mx/pub/static/version1573793901/frontend/Sm/smarket/es_MX/Hexasoft_FraudLabsPro/fraudlabsproagent.js"></script>
+<link  rel="icon" type="image/x-icon" href="https://doto.com.mx/pub/media/favicon/websites/1/index.png" />
+<link  rel="shortcut icon" type="image/x-icon" href="https://doto.com.mx/pub/media/favicon/websites/1/index.png" />
+                <script>
+        window.getWpCookie = function(name) {
+            match = document.cookie.match(new RegExp(name + '=([^;]+)'));
+            if (match) return decodeURIComponent(match[1].replace(/\+/g, ' ')) ;
+        };
+
+        window.dataLayer = window.dataLayer || [];
+                var wpCookies = ['wp_customerId','wp_customerGroup'];
+        wpCookies.map(function(cookieName) {
+            var cookieValue = window.getWpCookie(cookieName);
+            if (cookieValue) {
+                var dlObject = {};
+                dlObject[cookieName.replace('wp_', '')] = cookieValue;
+                window.dataLayer.push(dlObject);
+            }
+        });
+    </script>
+
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-56SQLLS');</script>
+<!-- End Google Tag Manager -->
+<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Poppins:400' />
+<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900' />
+<link  rel="stylesheet" type="text/css"  media="all" href="https://doto.com.mx/pub/static/version1573793901/frontend/Sm/smarket/es_MX/css/config_1.css" />
+
+<!--CUSTOM CSS-->
+<style>
+	</style>
+
+<script type="text/javascript" async>
+	require([
+		'domReady!',
+		'jquerybootstrap',
+		'yttheme'
+	], function ($) {
+		//console.log('Test Done');
+	});
+</script>
+
+
+<!--CUSTOM JS-->
+
+<script type="text/javascript" async>
+	require([
+		'jquery',
+		'domReady!'
+	], function ($) {
+		if($('.breadcrumbs').length == 0){
+			$('body').addClass("no-breadcrumbs");
+		}
+	});
+
+</script>
+
+<!-- START SHOPMESSAGE -->
+<script type="text/javascript">
+window.lightningjs||function(s){var w="lightningjs";function e(e,t){var r,v,g,n,a,i;return t&&(t+=(/\?/.test(t)?"&":"?")+"lv=1"),s[e]||(r=window,v=document,g=e,n=v.location.protocol,a="load",i=0,function(){s[g]=function(){var e=arguments,t=this,o=++i,n=t&&t!=r&&t.id||0;function d(){return d.id=o,s[g].apply(d,arguments)}return(u.s=u.s||[]).push([o,n,e]),d.then=function(e,t,n){var r=u.fh[o]=u.fh[o]||[],a=u.eh[o]=u.eh[o]||[],i=u.ph[o]=u.ph[o]||[];return e&&r.push(e),t&&a.push(t),n&&i.push(n),d},d};var u=s[g]._={};function e(){u.P(a),u.w=1,s[g]("_load")}u.fh={},u.eh={},u.ph={},u.l=t?t.replace(/^\/\//,("https:"==n?n:"http:")+"//"):t,u.p={0:+new Date},u.P=function(e){u.p[e]=new Date-u.p[0]},u.w&&e(),r.addEventListener?r.addEventListener(a,e,!1):r.attachEvent("on"+a,e);var m=function(){function t(){return["<head></head><",e,' onload="var d=',h,";d.getElementsByTagName('head')[0].",a,"(d.",i,"('script')).",o,"='",u.l,"'\"></",e,">"].join("")}var e="body",n=v[e];if(!n)return setTimeout(m,100);u.P(1);var r,a="appendChild",i="createElement",o="src",d=v[i]("div"),s=d[a](v[i]("div")),c=v[i]("iframe"),h="document",p="domain",l="contentWindow";d.style.display="none",n.insertBefore(d,n.firstChild).id=w+"-"+g,c.frameBorder="0",c.id=w+"-frame-"+g,/MSIE[ ]+6/.test(navigator.userAgent)&&(c[o]="javascript:false"),c.allowTransparency="true",s[a](c);try{c[l][h].open()}catch(e){u[p]=v[p],r="javascript:var d="+h+".open();d.domain='"+v.domain+"';",c[o]=r+"void(0);"}try{var f=c[l][h];f.write(t()),f.close()}catch(e){c[o]=r+'d.write("'+t().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}u.P(2)};u.l&&m()}()),s[e].lv="1",s[e]}var t=window[w]=e(w);t.require=e,t.modules=s}({}),window._shopmsg=lightningjs.require("_shopmsg","https://cdn.shopmsg.me/v1.0/shopmsg_sdk.js?c=5bcb3b585e9f0dedef3d1487f64642f80871cca7"),function(e,t,n){var r,a=e.getElementsByTagName(t)[0];e.getElementById(n)||((r=e.createElement(t)).id=n,r.src="https://cdn.shopmsg.me/platform/bW0DvuyCQgD7/v1.0/initialize.js?c=5bcb3b585e9f0dedef3d1487f64642f80871cca7",a.parentNode.insertBefore(r,a))}(document,"script","shopmsg-jssdk");
+</script>
+<!-- END SHOPMESSAGE -->
+
+
+
+<script>
+(function(c,o,v,i,e,w){c[v]=c[v]||function(){(c[v].a=c[v].a||[]).push(arguments)};var s=o.createElement(i);s.src=e;s.async=1;var h=o.getElementsByTagName(i)[0];h.parentNode.insertBefore(s,h);c.addEventListener('error',function(err){c[v]('error',err)});c.addEventListener('message',function(msg){c[v]('message',msg)})})(window,document,'coview','script','https://cdn.coview.com/coview.js')
+coview('start', {
+  projectKey:'IH77fwM839E'
+});
+</script>
+
+
+<!--LISTING CONFIG-->
+<style>
+
+.g2font,.header-bottom, .sm-listing-tabs .ltabs-wrap .ltabs-tabs-container .ltabs-tabs li, .block.latest-post-container .slider-post-container .info-blog .date-post-title .postTitle , .bs-pretext , .deals-countdown{
+	font-family:Roboto;
+}
+
+
+@media (min-width: 1200px) {
+
+		.container{
+		padding-left:0;
+		padding-right:0;
+		max-width: 1170px;
+		width: 1170px;
+	}
+
+
+
+	/*==1 COLUMN==*/
+
+	.col1-layout .category-product.products-grid .item{
+		width: 25%;
+	}
+
+	.col1-layout .category-product.products-grid .item:nth-child(4n+1){
+		clear:both;
+	}
+
+	/*==2 COLUMNS==*/
+
+	.col2-layout .category-product.products-grid .item{
+		width: 33.333333333333%;
+	}
+
+	.col2-layout .category-product.products-grid .item:nth-child(3n+1){
+		clear:both;
+	}
+
+	/*==3 COLUMNS==*/
+
+	.col3-layout .category-product.products-grid .item{
+		width: 50%;
+	}
+
+	.col3-layout .category-product.products-grid .item:nth-child(2n+1){
+		clear:both;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+	/*==1 COLUMN==*/
+
+	.col1-layout .category-product.products-grid .item{
+		width: 25%;
+	}
+
+	.col1-layout .category-product.products-grid .item:nth-child(4n+1){
+		clear:both;
+	}
+
+	/*==2 COLUMNS==*/
+
+	.col2-layout .category-product.products-grid .item{
+		width: 33.333333333333%;
+	}
+
+	.col2-layout .category-product.products-grid .item:nth-child(3n+1){
+		clear:both;
+	}
+
+	/*==3 COLUMNS==*/
+
+	.col3-layout .category-product.products-grid .item{
+		width: 50%;
+	}
+
+	.col3-layout .category-product.products-grid .item:nth-child(2n+1){
+		clear:both;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+	/*==1 COLUMN==*/
+
+	.col1-layout .category-product.products-grid .item{
+		width: 33.333333333333%;
+	}
+
+	.col1-layout .category-product.products-grid .item:nth-child(3n+1){
+		clear:both;
+	}
+
+	/*==2 COLUMNS==*/
+
+	.col2-layout .category-product.products-grid .item{
+		width: 33.333333333333%;
+	}
+
+	.col2-layout .category-product.products-grid .item:nth-child(3n+1){
+		clear:both;
+	}
+
+	/*==3 COLUMNS==*/
+
+	.col3-layout .category-product.products-grid .item{
+		width: 50%;
+	}
+
+	.col3-layout .category-product.products-grid .item:nth-child(2n+1){
+		clear:both;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+	/*==1 COLUMN==*/
+
+	.col1-layout .category-product.products-grid .item{
+		width: 50%;
+	}
+
+	.col1-layout .category-product.products-grid .item:nth-child(2n+1){
+		clear:both;
+	}
+
+	/*==2 COLUMNS==*/
+
+	.col2-layout .category-product.products-grid .item{
+		width: 50%;
+	}
+
+	.col2-layout .category-product.products-grid .item:nth-child(2n+1){
+		clear:both;
+	}
+
+	/*==3 COLUMNS==*/
+
+	.col3-layout .category-product.products-grid .item{
+		width: 100%;
+	}
+
+	.col3-layout .category-product.products-grid .item:nth-child(1n+1){
+		clear:both;
+	}
+}
+
+
+
+@media (max-width: 480px) {
+
+	/*==1 COLUMN==*/
+
+	.col1-layout .category-product.products-grid .item{
+		width: 100%;
+	}
+
+	.col1-layout .category-product.products-grid .item:nth-child(1n+1){
+		clear:both;
+	}
+
+	/*==2 COLUMNS==*/
+
+	.col2-layout .category-product.products-grid .item{
+		width: 100%;
+	}
+
+	.col2-layout .category-product.products-grid .item:nth-child(1n+1){
+		clear: none;
+    	width: 50%;
+	}
+
+	.block-search {
+		/*display: none;*/
+	}
+
+	.page-main{
+		padding: 0 0 0 0;
+	}
+
+	.breadcrumbs {
+    	height: none;
+    	padding: 0;
+	}
+	.breadcrumbs .items{
+    	margin-bottom: 10px;
+    	/*margin-top: -20px;*/
+	}
+
+	.toolbar.toolbar-products {
+    	text-align: right;
+	}
+
+	.col-xs-4 {
+    	float: none;
+    	width: 100%;
+	}
+
+	.header-top{
+		margin-top: 0px;
+	}
+
+	.header-middle.header-middle-mobile {
+		margin-top: -50px;
+	}
+
+
+
+
+	/*==3 COLUMNS==*/
+
+	.col3-layout .category-product.products-grid .item{
+		width: 100%;
+	}
+
+	.col3-layout .category-product.products-grid .item:nth-child(1n+1){
+		clear:both;
+	}
+}
+@media not all and (min-resolution:.001dpcm) and (max-width: 480px)
+{ @supports (-webkit-appearance:none) {
+
+    .header-top{
+
+        margin-top: 50px;
+
+    }
+}}
+
+@media (min-width: 480px) {
+	.header-container.header-style-1 {
+
+   		margin-top: -50px;
+
+	}
+}
+
+
+
+</style>
+
+<script>
+    window.Searchanise = {"host":"http:\/\/www.searchanise.com","api_key":"3f1z7L1H0g","SearchInput":"#search,form input[name=\"q\"]","AdditionalSearchInputs":"#name,#description,#sku","AutoCmpParams":{"union":{"price":{"min":"se_price_0"}},"restrictBy":{"status":1,"visibility":"3|4"}},"options":{"ResultsDiv":"#snize_results","ResultsFormPath":"https:\/\/doto.com.mx\/searchanise\/result","ResultsFallbackUrl":"https:\/\/doto.com.mx\/catalogsearch\/result\/?q=","PriceFormat":{"decimals_separator":".","thousands_separator":",","symbol":"$","decimals":2,"rate":1,"after":false}},"ResultsParams":{"facetBy":{"price":{"type":"slider"}},"union":{"price":{"min":"se_price_0"}},"restrictBy":{"status":1,"visibility":"3|4"}}};
+
+    requirejs.config({
+        paths: {
+            'searchanise': '//www.searchanise.com/widgets/v1.0/init'
+        },
+        shim: {
+            'searchanise': ['jquery']
+        }
+    });
+</script>
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "searchanise": {}
+        }
+    }
+</script>
+            </head>
+    <body data-container="body" data-mage-init='{"loaderAjax": {}, "loader": { "icon": "https://doto.com.mx/pub/static/version1573793901/frontend/Sm/smarket/es_MX/images/loader-2.gif"}}' class="header-1-style home-1-style footer-1-style layout-wide  customer-account-create page-layout-1column">
+
+	<div class="fb-customerchat" greeting_dialog_display="hide" center_align="true" page_id="355531554799489"></div>
+        <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-56SQLLS"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<script>
+    try {
+        if (!window.localStorage || !window.sessionStorage) {
+            throw new Error();
+        }
+
+        localStorage.setItem('storage_test', 1);
+        localStorage.removeItem('storage_test');
+    } catch(e) {
+        (function () {
+            var Storage = function (type) {
+                var data;
+
+                function createCookie(name, value, days) {
+                    var date, expires;
+
+                    if (days) {
+                        date = new Date();
+                        date.setTime(date.getTime()+(days * 24 * 60 * 60 * 1000));
+                        expires = '; expires=' + date.toGMTString();
+                    } else {
+                        expires = '';
+                    }
+                    document.cookie = name + '=' + value+expires+'; path=/';
+                }
+
+                function readCookie(name) {
+                    var nameEQ = name + '=',
+                        ca = document.cookie.split(';'),
+                        i = 0,
+                        c;
+
+                    for (i=0; i < ca.length; i++) {
+                        c = ca[i];
+
+                        while (c.charAt(0) === ' ') {
+                            c = c.substring(1,c.length);
+                        }
+
+                        if (c.indexOf(nameEQ) === 0) {
+                            return c.substring(nameEQ.length, c.length);
+                        }
+                    }
+
+                    return null;
+                }
+
+                function setData(data) {
+                    data = encodeURIComponent(JSON.stringify(data));
+                    createCookie(type === 'session' ? getSessionName() : 'localStorage', data, 365);
+                }
+
+                function clearData() {
+                    createCookie(type === 'session' ? getSessionName() : 'localStorage', '', 365);
+                }
+
+                function getData() {
+                    var data = type === 'session' ? readCookie(getSessionName()) : readCookie('localStorage');
+
+                    return data ? JSON.parse(decodeURIComponent(data)) : {};
+                }
+
+                function getSessionName() {
+                    if (!window.name) {
+                        window.name = new Date().getTime();
+                    }
+
+                    return 'sessionStorage' + window.name;
+                }
+
+                data = getData();
+
+                return {
+                    length: 0,
+                    clear: function () {
+                        data = {};
+                        this.length = 0;
+                        clearData();
+                    },
+
+                    getItem: function (key) {
+                        return data[key] === undefined ? null : data[key];
+                    },
+
+                    key: function (i) {
+                        var ctr = 0,
+                            k;
+
+                        for (k in data) {
+                            if (ctr.toString() === i.toString()) {
+                                return k;
+                            } else {
+                                ctr++
+                            }
+                        }
+
+                        return null;
+                    },
+
+                    removeItem: function (key) {
+                        delete data[key];
+                        this.length--;
+                        setData(data);
+                    },
+
+                    setItem: function (key, value) {
+                        data[key] = value.toString();
+                        this.length++;
+                        setData(data);
+                    }
+                };
+            };
+
+            window.localStorage.__proto__ = window.localStorage = new Storage('local');
+            window.sessionStorage.__proto__ = window.sessionStorage = new Storage('session');
+        })();
+    }
+</script>
+    <script>
+        require.config({
+            deps: [
+                'jquery',
+                'mage/translate',
+                'jquery/jquery-storageapi'
+            ],
+            callback: function ($) {
+                'use strict';
+
+                var dependencies = [],
+                    versionObj;
+
+                $.initNamespaceStorage('mage-translation-storage');
+                $.initNamespaceStorage('mage-translation-file-version');
+                versionObj = $.localStorage.get('mage-translation-file-version');
+
+
+                if (versionObj.version !== '09ab6a4b5d1b08dfe04152816e0ccda1b3ece50a') {
+                    dependencies.push(
+                        'text!js-translation.json'
+                    );
+
+                }
+
+                require.config({
+                    deps: dependencies,
+                    callback: function (string) {
+                        if (typeof string === 'string') {
+                            $.mage.translate.add(JSON.parse(string));
+                            $.localStorage.set('mage-translation-storage', string);
+                            $.localStorage.set(
+                                'mage-translation-file-version',
+                                {
+                                    version: '09ab6a4b5d1b08dfe04152816e0ccda1b3ece50a'
+                                }
+                            );
+                        } else {
+                            $.mage.translate.add($.localStorage.get('mage-translation-storage'));
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "mage/cookies": {
+                "expires": null,
+                "path": "/",
+                "domain": ".doto.com.mx",
+                "secure": false,
+                "lifetime": "86400"
+            }
+        }
+    }
+</script>
+    <noscript>
+        <div class="message global noscript">
+            <div class="content">
+                <p>
+                    <strong>Parece que JavaScript está deshabilitado en su navegador.</strong>
+                    <span>Para la mejor experiencia en nuestro sitio web, asegúrese de activar Javascript en su navegador.</span>
+                </p>
+            </div>
+        </div>
+    </noscript>
+<!-- BEGIN GOOGLE ANALYTICS CODE -->
+<script type="text/x-magento-init">
+{
+    "*": {
+        "Magento_GoogleAnalytics/js/google-analytics": {
+            "isCookieRestrictionModeEnabled": 0,
+            "currentWebsite": 1,
+            "cookieName": "user_allowed_save_cookie",
+            "ordersTrackingData": [],
+            "pageTrackingData": {"optPageUrl":"","isAnonymizedIpActive":"0","accountId":"UA-87125036-3"}        }
+    }
+}
+</script>
+<!-- END GOOGLE ANALYTICS CODE -->
+<div style="display: none;" id="paypal-express-in-context-checkout-main"></div>
+<script type="text/x-magento-init">
+    {"*":{"Magento_Paypal\/js\/in-context\/express-checkout":{"id":"paypal-express-in-context-checkout-main","path":"https:\/\/doto.com.mx\/paypal\/express\/gettoken\/","merchantId":"ZCMPWFXRLFNBL","button":true,"clientConfig":{"locale":"es_MX","environment":"production","button":["paypal-express-in-context-checkout-main"]}}}}</script>
+<div class="widget block block-static-block">
+    <p style="width=100%; padding: 5px; text-align: center; background: #f99d1c;"><span style="color: #fff; font-weight: bold;">Aprovecha hasta 18 MSI pagando con PayPal* + promociones bancarias <a href="https://doto.com.mx/banamex-buenfin-2019">ver más</a></span></p></div>
+<div class="page-wrapper"><header class="page-header">    <script text="text/javascript">
+        var _learnq = _learnq || [];
+        _learnq.push(['account', 'KQntyL']);
+        (function () { var b = document.createElement('script'); b.type = 'text/javascript'; b.async = true; b.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'a.klaviyo.com/media/js/analytics/analytics.js'; var a = document.getElementsByTagName('script')[0]; a.parentNode.insertBefore(b, a); })();
+
+
+    </script>
+</header> <div class="header-container header-style-1">
+ 	<div class="header-bottom header-mobile">
+		<div class="container">
+				<div class="col-lg-2 col-xs-2  sidebar-megamenu">
+					<div class="navigation-mobile-container">
+
+
+<!--COLLAPSE-->
+
+<!--SIDEBAR-->
+	<div class="nav-mobile-container sidebar-type">
+		<div class="btn-mobile">
+			<a id="sidebar-button" class="button-mobile sidebar-nav" title="Categorías"><i class="fa fa-bars"></i><span class="hidden">Categorías</span></a>
+		</div>
+		<nav class="navigation-mobile">
+			<ul>
+				<li  class="level0 nav-1 first level-top parent"><a href="https://doto.com.mx/computo.html"  class="level-top" ><span>Cómputo</span></a><ul class="level0 submenu"><li  class="level1 nav-1-1 first"><a href="https://doto.com.mx/computo/mac-os.html" ><span>Mac OS</span></a></li><li  class="level1 nav-1-2"><a href="https://doto.com.mx/computo/windows.html" ><span>Windows</span></a></li><li  class="level1 nav-1-3 last"><a href="https://doto.com.mx/computo/accesorios.html" ><span>Accesorios</span></a></li></ul></li><li  class="level0 nav-2 level-top parent"><a href="https://doto.com.mx/audio.html"  class="level-top" ><span>Audio</span></a><ul class="level0 submenu"><li  class="level1 nav-2-1 first"><a href="https://doto.com.mx/audio/audifonos.html" ><span>Audífonos</span></a></li><li  class="level1 nav-2-2"><a href="https://doto.com.mx/audio/bocinas.html" ><span>Bocinas</span></a></li><li  class="level1 nav-2-3 last"><a href="https://doto.com.mx/audio/ipod.html" ><span>iPod</span></a></li></ul></li><li  class="level0 nav-3 level-top parent"><a href="https://doto.com.mx/tablets.html"  class="level-top" ><span>Tablets</span></a><ul class="level0 submenu"><li  class="level1 nav-3-1 first"><a href="https://doto.com.mx/tablets/ipad.html" ><span>iPad</span></a></li><li  class="level1 nav-3-2"><a href="https://doto.com.mx/tablets/android-tablets.html" ><span>Android Tablets</span></a></li><li  class="level1 nav-3-3 last"><a href="https://doto.com.mx/tablets/accesorios.html" ><span>Accesorios</span></a></li></ul></li><li  class="level0 nav-4 level-top parent"><a href="https://doto.com.mx/videojuegos.html"  class="level-top" ><span>Videojuegos</span></a><ul class="level0 submenu"><li  class="level1 nav-4-1 first"><a href="https://doto.com.mx/videojuegos/playstation.html" ><span>Playstation</span></a></li><li  class="level1 nav-4-2"><a href="https://doto.com.mx/videojuegos/xbox.html" ><span>XBOX</span></a></li><li  class="level1 nav-4-3"><a href="https://doto.com.mx/videojuegos/nintendo.html" ><span>Nintendo</span></a></li><li  class="level1 nav-4-4 last"><a href="https://doto.com.mx/videojuegos/accesorios.html" ><span>Accesorios</span></a></li></ul></li><li  class="level0 nav-5 level-top parent"><a href="https://doto.com.mx/gadgets.html"  class="level-top" ><span>Gadgets</span></a><ul class="level0 submenu"><li  class="level1 nav-5-1 first"><a href="https://doto.com.mx/gadgets/smartwatch.html" ><span>Smartwatch</span></a></li><li  class="level1 nav-5-2"><a href="https://doto.com.mx/gadgets/otros.html" ><span>Otros</span></a></li><li  class="level1 nav-5-3"><a href="https://doto.com.mx/gadgets/smart-home.html" ><span>Smart Home</span></a></li><li  class="level1 nav-5-4"><a href="https://doto.com.mx/gadgets/bicicleta-electrica.html" ><span>Bicicleta Eléctrica</span></a></li><li  class="level1 nav-5-5"><a href="https://doto.com.mx/gadgets/reloj.html" ><span>Reloj</span></a></li><li  class="level1 nav-5-6 last"><a href="https://doto.com.mx/gadgets/mochila.html" ><span>Mochila</span></a></li></ul></li><li  class="level0 nav-6 level-top parent"><a href="https://doto.com.mx/televisiones.html"  class="level-top" ><span>Televisiones</span></a><ul class="level0 submenu"><li  class="level1 nav-6-1 first last"><a href="https://doto.com.mx/televisiones/smart-tv.html" ><span>Smart TV</span></a></li></ul></li><li  class="level0 nav-7 level-top"><a href="https://doto.com.mx/camaras.html"  class="level-top" ><span>Cámaras</span></a></li><li  class="level0 nav-8 level-top"><a href="https://doto.com.mx/ofertas-especiales.html"  class="level-top" ><span>Ofertas Especiales</span></a></li><li  class="level0 nav-9 level-top"><a href="https://doto.com.mx/ultimas-piezas.html"  class="level-top" ><span>Últimas Piezas</span></a></li><li  class="level0 nav-10 level-top"><a href="https://doto.com.mx/apple.html"  class="level-top" ><span>Apple</span></a></li><li  class="level0 nav-11 level-top"><a href="https://doto.com.mx/blog/"  class="level-top" ><span>Blog</span></a></li>			</ul>
+		</nav>
+
+		<script type="text/javascript">
+			require([
+				'jquery'
+			], function ($) {
+				$('#sidebar-button').click(function(){
+					$('body').toggleClass('navbar-active');
+					$(this).toggleClass('active');
+				});
+
+				$('.navigation-mobile > ul li').has('ul').append( '<span class="touch-button"><span>open</span></span>' );
+
+				$('.touch-button').click(function(){
+					$(this).prev().slideToggle(200);
+					$(this).toggleClass('active');
+					$(this).parent().toggleClass('parent-active');
+				});
+
+			});
+		</script>
+
+	</div>
+					</div>
+				</div>
+				<h1 class="logo-content logo-mobile">
+				    <strong class="logo">
+						<a class="logo" href="/" title="doto.com.mx">
+							<img src="/pub/media/logo/websites/1/DOTO-logo-2018.png" alt="doto.com.mx" style="height: 50px">
+
+						</a>
+					</strong>
+				</h1>
+		</div>
+	</div>
+
+	<div class="header-middle header-middle-mobile">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-5 header-middle-right header-middle-right-mobile">
+					<div class="middle-right-content">
+
+						<!--
+						<img src="/pub/media/wysiwyg/icon/carrito-compra-gris.png" style="margin-top: -3px; max-width: 25px; margin-right: 5px;" onClick="buscador();">
+						-->
+
+
+						<a data-lion-account-link="" style="color:#f99d1c; cursor:pointer"><img onmouseout="this.src='/pub/media/wysiwyg/icon/dotopoints-gris.png';" onmouseover="this.src='/pub/media/wysiwyg/icon/dotopoints.png';" src="/pub/media/wysiwyg/icon/dotopoints-gris.png" style="margin-top: -3px; max-width: 30px; margin-right: 5px;"></a>
+
+
+						<a href="/checkout/cart/"><img onmouseout="this.src='/pub/media/wysiwyg/icon/carrito-compra-gris.png';" onmouseover="this.src='/pub/media/wysiwyg/icon/carrito-compra.png';" src="/pub/media/wysiwyg/icon/carrito-compra-gris.png" style="margin-top: -3px; max-width: 25px; margin-right: 5px;"></a>
+
+						<a href="/customer/account/"><img onmouseout="this.src='/pub/media/wysiwyg/icon/usuario-Gris.png';" onmouseover="this.src='/pub/media/wysiwyg/icon/usuaruio-naranja.png';" src="/pub/media/wysiwyg/icon/usuario-Gris.png" style="margin-top: -3px; max-width: 25px;"></a>
+
+
+																			</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		function buscador(){
+
+			search_mini_form.style.display = "block";
+			return true;
+	}</script>
+
+	<div class="header-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-sm-12 col-xs-12 language-currency-top">
+					<style type="text/css">
+#movil{
+    display:none !important;
+}
+
+@media only screen and (max-width: 700px) {
+     #movil{display: inline !important;}
+    #web{display:none}
+
+}
+</style>
+
+<script async type="text/javascript" src="//static.klaviyo.com/onsite/js/klaviyo.js?company_id=KQntyL"></script>
+<div class="call-us">
+<span>Contáctanos:&nbsp;&nbsp;</span>
+<!-- <i class="fa fa-whatsapp" aria-hidden="true"></i> -->
+<!-- <span id="web"><a href="https://web.whatsapp.com/send?phone=+525545935711">55 4593 5711</a>&nbsp;&nbsp;&nbsp;&nbsp;</span> -->
+<!-- <span id="movil"><a href="https://api.whatsapp.com/send?phone=+525545935711">55 4593 5711</a>&nbsp;&nbsp;&nbsp;&nbsp;</span> -->
+<span id="web">contacto@doto.com.mx&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span id="movil">contacto@doto.com.mx&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<i class="fa fa-phone"></i><span><!-- <a href=”tel:55 4161 1714″>55 4161 1714</a></span>--> <span id="movil"><a href="tel:5541611714">55 4161 1714</a></span><span id="web"><a href="/como-comprar">55 4161 1714</a></span>
+</div>					<div class="language-wrapper">
+</div>
+					<!-- VA Social links start-->
+					<ul class="list-inline social-links">
+						<!--<li class="">
+							<a href="#" title="" class="social-links__blog">
+								<span class="social-links__icon"><i class="fa fa-rss" aria-hidden="true"></i></span> Blog
+							</a>
+						</li>-->
+						<li data-bind="scope: 'wishlist'">
+						  <a href="https://www.facebook.com/dotomx/" title=""  class="social-links__fb">
+						    <span class="social-links__icon"><i class="fa fa-facebook" aria-hidden="true"></i></span> Facebook
+						   </a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/dotomx/" title=""  class="social-links__insta">
+								<span class="social-links__icon"><i class="fa fa-instagram" aria-hidden="true"></i></span> Instagram
+							</a>
+						</li>
+          			</ul>
+          <!-- VA Social links end-->
+
+				</div>
+
+				<div class="col-lg-4 col-sm-12 col-xs-12 header-top-links">
+					<div class="toplinks-wrapper"><ul class="header links">
+<li class="myaccount-link">
+	<a data-lion-account-link style="color:#f99d1c; cursor:pointer">Mis dotopoints</a>
+</li>
+<li class="myaccount-link">
+	<a href="https://doto.com.mx/customer/account/" title="Mi Cuenta">Mi Cuenta</a>
+</li>
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                    "wishlist": {
+                        "component": "Magento_Wishlist/js/view/wishlist"
+                    }
+                }
+            }
+        }
+    }
+
+</script>
+<li class="checkout-link">
+	<a href="https://doto.com.mx/checkout/" title="Ir a pagar">Ir a pagar</a>
+</li><li class="authorization-link" data-label="o">
+    <a href="https://doto.com.mx/customer/account/login/referer/aHR0cHM6Ly9kb3RvLmNvbS5teC9jdXN0b21lci9hY2NvdW50L2NyZWF0ZS8%2C/">
+        Iniciar sesión    </a>
+</li>
+</ul></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="header-middle">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-md-2 logo-header">
+					<div class="logo-wrapper"><h1 class="logo-content">
+    <strong class="logo">
+		<a class="logo" href="https://doto.com.mx/" title="doto.com.mx">
+			<img src="https://doto.com.mx/pub/media/logo/websites/1/DOTO-logo-2018.png"
+				 alt="doto.com.mx"
+				 width="250"				 height="98"			/>
+
+		</a>
+	</strong>
+</h1>
+
+</div>				</div>
+				<div class="col-lg-6 col-md-5">
+					<div class="block-search" align="center">
+    <div class="block block-content">
+        <form class="form minisearch" id="search_mini_form" action="https://doto.com.mx/catalogsearch/result/" method="get">
+            <div class="field search">
+                <div class="control">
+                    <input id="search"
+                           data-mage-init='{"quickSearch":{
+                                "formSelector":"#search_mini_form",
+                                "url":"https://doto.com.mx/search/ajax/suggest/",
+                                "destinationSelector":"#search_autocomplete"}
+                           }'
+                           type="text"
+                           name="q"
+                           value=""
+                           placeholder="Buscar en toda la tienda..."
+                           class="input-text"
+                           maxlength="128"
+                           role="combobox"
+                           aria-haspopup="false"
+                           aria-autocomplete="both"
+                           autocomplete="off" style="border:2px solid #f99d1c; border-radius: 20px; height: 40px;margin-top: 12px;"/>
+
+                </div>
+            </div>
+            <div class="actions">
+                <button type="submit"
+                        title="Buscar"
+                        class="action search">
+                    <span>Buscar</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- /* ocultar buscador checkout */ -->
+<style type="text/css">
+ #snize-mobile-top-panel {
+    display: block; !important;
+}
+
+</style>
+				</div>
+				<div class="col-lg-4 col-md-5 header-middle-right">
+					<div class="middle-right-content">
+
+						<div class="customer-action-hd">
+
+
+								<script>
+								  window.intercomSettings = {
+								    app_id: "znspt94a"
+								  };
+								</script>
+								<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/znspt94a';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+								<a href="/customer/account/"><img onmouseout="this.src='/pub/media/wysiwyg/icon/usuario-Gris.png';" onmouseover="this.src='/pub/media/wysiwyg/icon/usuaruio-naranja.png';" src="/pub/media/wysiwyg/icon/usuario-Gris.png" style="margin-left: -20px; max-width: 25px; margin-top: 10px; margin-right: 30px; margin-bottom: -15px;"></a>
+								 <a href="https://doto.com.mx/customer/account/login/" title="Entrar">Iniciar sesión</a><br>								 <a href="https://doto.com.mx/customer/account/create/" title="Crear cuenta">Crear cuenta</a>
+														<span class="welcome-text">
+
+
+							</span>
+						</div>
+						<div class="minicart-header">
+							<div class="minicart-content">
+								<div class="cart-wrapper">
+<div data-block="minicart" class="minicart-wrapper">
+    <a class="action showcart" href="https://doto.com.mx/checkout/cart/"
+       data-bind="scope: 'minicart_content'">
+        <span class="text"><span class="df-text">Mi carrito</span><span class="hidden">My Cart - </span></span>
+        <span class="counter qty empty"
+              data-bind="css: { empty: !!getCartParam('summary_count') == false }, blockLoader: isLoading">
+            <span class="counter-number"><!-- ko text: getCartParam('summary_count') --><!-- /ko --></span>
+            <span class="counter-label">
+			<!-- ko if: getCartParam('summary_count') -->
+                <!-- ko text: getCartParam('summary_count') --><!-- /ko -->
+                <!-- ko i18n: 'items' --><!-- /ko -->
+            <!-- /ko -->
+
+			<!-- ko if: getCartParam('summary_count') == 0 -->
+                <!-- ko i18n: '0 item' --><!-- /ko -->
+            <!-- /ko -->
+            </span>
+
+			<span class="price-minicart">
+
+					<!-- ko foreach: getRegion('subtotalContainer') -->
+						<!-- ko template: getTemplate() --><!-- /ko -->
+					<!-- /ko -->
+
+			</span>
+        </span>
+    </a>
+            <div class="block block-minicart empty"
+             data-role="dropdownDialog"
+             data-mage-init='{"dropdownDialog":{
+                "appendTo":"[data-block=minicart]",
+                "triggerTarget":".showcart",
+                "timeout": "2000",
+                "closeOnMouseLeave": false,
+                "closeOnEscape": true,
+                "triggerClass":"active",
+                "parentClass":"active",
+                "buttons":[]}}'>
+            <div id="minicart-content-wrapper" data-bind="scope: 'minicart_content'">
+                <!-- ko template: getTemplate() --><!-- /ko -->
+            </div>
+                    </div>
+        <script>
+        window.checkout = {"shoppingCartUrl":"https:\/\/doto.com.mx\/checkout\/cart\/","checkoutUrl":"https:\/\/doto.com.mx\/checkout\/","updateItemQtyUrl":"https:\/\/doto.com.mx\/checkout\/sidebar\/updateItemQty\/","removeItemUrl":"https:\/\/doto.com.mx\/checkout\/sidebar\/removeItem\/","imageTemplate":"Magento_Catalog\/product\/image_with_borders","baseUrl":"https:\/\/doto.com.mx\/","minicartMaxItemsVisible":5,"websiteId":"1","maxItemsToDisplay":10,"customerLoginUrl":"https:\/\/doto.com.mx\/customer\/account\/login\/","isRedirectRequired":false,"autocomplete":"off","captcha":{"user_login":{"isCaseSensitive":false,"imageHeight":50,"imageSrc":"","refreshUrl":"https:\/\/doto.com.mx\/captcha\/refresh\/","isRequired":false},"guest_checkout":{"isCaseSensitive":false,"imageHeight":50,"imageSrc":"","refreshUrl":"https:\/\/doto.com.mx\/captcha\/refresh\/","isRequired":false}}};
+    </script>
+    <script type="text/x-magento-init">
+    {
+        "[data-block='minicart']": {
+            "Magento_Ui/js/core/app": {"components":{"minicart_content":{"children":{"subtotal.container":{"children":{"subtotal":{"children":{"subtotal.totals":{"config":{"display_cart_subtotal_incl_tax":0,"display_cart_subtotal_excl_tax":1,"template":"Magento_Tax\/checkout\/minicart\/subtotal\/totals"},"children":{"subtotal.totals.msrp":{"component":"Magento_Msrp\/js\/view\/checkout\/minicart\/subtotal\/totals","config":{"displayArea":"minicart-subtotal-hidden","template":"Magento_Msrp\/checkout\/minicart\/subtotal\/totals"}}},"component":"Magento_Tax\/js\/view\/checkout\/minicart\/subtotal\/totals"}},"component":"uiComponent","config":{"template":"Magento_Checkout\/minicart\/subtotal"}}},"component":"uiComponent","config":{"displayArea":"subtotalContainer"}},"item.renderer":{"component":"uiComponent","config":{"displayArea":"defaultRenderer","template":"Magento_Checkout\/minicart\/item\/default"},"children":{"item.image":{"component":"Magento_Catalog\/js\/view\/image","config":{"template":"Magento_Catalog\/product\/image","displayArea":"itemImage"}},"checkout.cart.item.price.sidebar":{"component":"uiComponent","config":{"template":"Magento_Checkout\/minicart\/item\/price","displayArea":"priceSidebar"}}}},"extra_info":{"component":"uiComponent","config":{"displayArea":"extraInfo"}},"promotion":{"component":"uiComponent","config":{"displayArea":"promotion"}}},"config":{"itemRenderer":{"default":"defaultRenderer","simple":"defaultRenderer","virtual":"defaultRenderer"},"template":"Magento_Checkout\/minicart\/content"},"component":"Magento_Checkout\/js\/view\/minicart"}},"types":[]}        },
+        "*": {
+            "Magento_Ui/js/block-loader": "https://doto.com.mx/pub/static/version1573793901/frontend/Sm/smarket/es_MX/images/loader-1.gif"
+        }
+    }
+    </script>
+</div>
+
+
+</div>							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="header-bottom header-nomobile">
+		<div class="container">
+				<div class="col-lg-2 col-xs-2  sidebar-megamenu">
+					<div class="megamenu-content-sidebar">
+						<div class="btn-megamenu g2font">
+							<a href="javascript:void(0)" title=" Todo">Categorías</a>
+						</div>
+
+						<div class="menu-ver-content">
+							<div class="navigation-megamenu-wrapper">			<nav class="sm_megamenu_wrapper_vertical_menu sambar" id="sm_megamenu_menu5dce3f99c8c5c" data-sam="1766987801573797785">
+		<div class="sambar-inner">
+					<span class="btn-sambar" data-sapi="collapse" data-href="#sm_megamenu_menu5dce3f99c8c5c">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</span>
+			<ul class="sm-megamenu-hover sm_megamenu_menu sm_megamenu_menu_black" data-jsapi="on">
+
+														<li class="other-toggle 							sm_megamenu_lv1 sm_megamenu_drop parent    ">
+						<a class="sm_megamenu_head sm_megamenu_drop sm_megamenu_haschild" href="https://doto.com.mx/audio.html"  id="sm_megamenu_195">
+																<span class="sm_megamenu_icon sm_megamenu_nodesc">
+																								<span class="sm_megamenu_title">Audio</span>
+																			</span>
+						</a>
+																				<div class="sm-megamenu-child sm_megamenu_dropdown_6columns ">
+									<div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_6 sm_megamenu_firstcolumn    "><div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_6    "><div class="sm_megamenu_head_item"><div class="sm_megamenu_title  "><a  class="sm_megamenu_nodrop " href="https://doto.com.mx/audio/audifonos.html"  ><span class="sm_megamenu_title_lv-2">Audífonos</span></a></div></div></div><div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_6 sm_megamenu_firstcolumn    "><div class="sm_megamenu_head_item"><div class="sm_megamenu_title  "><a  class="sm_megamenu_nodrop " href="https://doto.com.mx/audio/bocinas.html"  ><span class="sm_megamenu_title_lv-2">Bocinas</span></a></div></div></div></div>								</div>
+												</li>
+														<li class="other-toggle 							sm_megamenu_lv1 sm_megamenu_drop parent    ">
+						<a class="sm_megamenu_head sm_megamenu_drop sm_megamenu_haschild" href="https://doto.com.mx/celulares"  id="sm_megamenu_198">
+																<span class="sm_megamenu_icon sm_megamenu_nodesc">
+																								<span class="sm_megamenu_title">Celulares</span>
+																			</span>
+						</a>
+																				<div class="sm-megamenu-child sm_megamenu_dropdown_6columns ">
+									<div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_6 sm_megamenu_firstcolumn    "><div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_6    "><div class="sm_megamenu_head_item"><div class="sm_megamenu_title  "><a  class="sm_megamenu_nodrop " href="https://doto.com.mx/celulares/ios.html"  ><span class="sm_megamenu_title_lv-2">iOS</span></a></div></div></div><div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_6 sm_megamenu_firstcolumn    "><div class="sm_megamenu_head_item"><div class="sm_megamenu_title  "><a  class="sm_megamenu_nodrop " href="https://doto.com.mx/celulares/android.html"  ><span class="sm_megamenu_title_lv-2">Android</span></a></div></div></div><div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_6 sm_megamenu_firstcolumn    "><div class="sm_megamenu_head_item"><div class="sm_megamenu_title  "><a  class="sm_megamenu_nodrop " href="https://doto.com.mx/celulares/accesorios.html"  ><span class="sm_megamenu_title_lv-2">Accesorios</span></a></div></div></div></div>								</div>
+												</li>
+														<li class="other-toggle 							sm_megamenu_lv1 sm_megamenu_drop parent    ">
+						<a class="sm_megamenu_head sm_megamenu_drop sm_megamenu_haschild" href="https://doto.com.mx/tablets.html"  id="sm_megamenu_202">
+																<span class="sm_megamenu_icon sm_megamenu_nodesc">
+																								<span class="sm_megamenu_title">Tablets</span>
+																			</span>
+						</a>
+																				<div class="sm-megamenu-child sm_megamenu_dropdown_6columns ">
+									<div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_6 sm_megamenu_firstcolumn    "><div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_6    "><div class="sm_megamenu_head_item"><div class="sm_megamenu_title  "><a  class="sm_megamenu_nodrop " href="https://doto.com.mx/tablets/ipad.html"  ><span class="sm_megamenu_title_lv-2">iPad</span></a></div></div></div><div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_6 sm_megamenu_firstcolumn    "><div class="sm_megamenu_head_item"><div class="sm_megamenu_title  "><a  class="sm_megamenu_nodrop " href="https://doto.com.mx/tablets/android-tablets.html"  ><span class="sm_megamenu_title_lv-2">Android Tablets</span></a></div></div></div><div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_6 sm_megamenu_firstcolumn    "><div class="sm_megamenu_head_item"><div class="sm_megamenu_title  "><a  class="sm_megamenu_nodrop " href="https://doto.com.mx/tablets/surface.html"  ><span class="sm_megamenu_title_lv-2">Surface</span></a></div></div></div><div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_1 sm_megamenu_firstcolumn    "><div class="sm_megamenu_head_item"><div class="sm_megamenu_title  "><a  class="sm_megamenu_nodrop " href="https://doto.com.mx/tablets/accesorios.html"  ><span class="sm_megamenu_title_lv-2">Accesorios</span></a></div></div></div></div>								</div>
+												</li>
+														<li class="other-toggle 							sm_megamenu_lv1 sm_megamenu_drop parent    ">
+						<a class="sm_megamenu_head sm_megamenu_drop sm_megamenu_haschild" href="https://doto.com.mx/videojuegos.html"  id="sm_megamenu_206">
+																<span class="sm_megamenu_icon sm_megamenu_nodesc">
+																								<span class="sm_megamenu_title">Videojuegos</span>
+																			</span>
+						</a>
+																				<div class="sm-megamenu-child sm_megamenu_dropdown_6columns ">
+									<div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_6 sm_megamenu_firstcolumn    "><div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_6  sm_megamenu_right  "><div class="sm_megamenu_head_item"><div class="sm_megamenu_title  "><a  class="sm_megamenu_nodrop " href="https://doto.com.mx/videojuegos/playstation.html"  ><span class="sm_megamenu_title_lv-2">Playstation</span></a></div></div></div><div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_6 sm_megamenu_firstcolumn    "><div class="sm_megamenu_head_item"><div class="sm_megamenu_title  "><a  class="sm_megamenu_nodrop " href="https://doto.com.mx/videojuegos/xbox.html"  ><span class="sm_megamenu_title_lv-2">XBOX</span></a></div></div></div><div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_6 sm_megamenu_firstcolumn    "><div class="sm_megamenu_head_item"><div class="sm_megamenu_title  "><a  class="sm_megamenu_nodrop " href="https://doto.com.mx/videojuegos/nintendo.html"  ><span class="sm_megamenu_title_lv-2">Nintendo</span></a></div></div></div></div>								</div>
+												</li>
+														<li class="other-toggle 							sm_megamenu_lv1 sm_megamenu_drop parent    ">
+						<a class="sm_megamenu_head sm_megamenu_drop sm_megamenu_haschild" href="https://doto.com.mx/computo.html"  id="sm_megamenu_192">
+																<span class="sm_megamenu_icon sm_megamenu_nodesc">
+																								<span class="sm_megamenu_title">Cómputo</span>
+																			</span>
+						</a>
+																				<div class="sm-megamenu-child sm_megamenu_dropdown_6columns ">
+									<div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_6 sm_megamenu_firstcolumn    "><div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_6    "><div class="sm_megamenu_head_item"><div class="sm_megamenu_title  "><a  class="sm_megamenu_nodrop " href="https://doto.com.mx/computo/mac-os.html"  ><span class="sm_megamenu_title_lv-2">Mac OS</span></a></div></div></div><div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_6 sm_megamenu_firstcolumn    "><div class="sm_megamenu_head_item"><div class="sm_megamenu_title  "><a  class="sm_megamenu_nodrop " href="https://doto.com.mx/computo/windows.html"  ><span class="sm_megamenu_title_lv-2">Windows</span></a></div></div></div><div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_6 sm_megamenu_firstcolumn    "><div class="sm_megamenu_head_item"><div class="sm_megamenu_title  "><a  class="sm_megamenu_nodrop " href="https://doto.com.mx/computo/accesorios.html"  ><span class="sm_megamenu_title_lv-2">Accesorios</span></a><div class="sm_megamenu_title"><h3 class="sm_megamenu_nodrop  title-cat">Accesorios</h3></div><div class="sm_megamenu_title "><a class="sm_megamenu_nodrop" href="https://doto.com.mx/computo/accesorios/teclados-y-mouse.html" ><span class="sm_megamenu_title_lv-2">Teclados&nbsp;y&nbsp;Mouse</span></a></div><div class="sm_megamenu_title "><a class="sm_megamenu_nodrop" href="https://doto.com.mx/computo/accesorios/mochilas.html" ><span class="sm_megamenu_title_lv-2">Mochilas</span></a></div><div class="sm_megamenu_title "><a class="sm_megamenu_nodrop" href="https://doto.com.mx/computo/accesorios/almacenamiento.html" ><span class="sm_megamenu_title_lv-2">Almacenamiento</span></a></div><div class="sm_megamenu_title "><a class="sm_megamenu_nodrop" href="https://doto.com.mx/computo/accesorios/otros.html" ><span class="sm_megamenu_title_lv-2">Otros</span></a></div></div></div></div></div>								</div>
+												</li>
+														<li class="other-toggle 							sm_megamenu_lv1 sm_megamenu_drop parent    ">
+						<a class="sm_megamenu_head sm_megamenu_drop sm_megamenu_haschild" href="https://doto.com.mx/gadgets.html"  id="sm_megamenu_210">
+																<span class="sm_megamenu_icon sm_megamenu_nodesc">
+																								<span class="sm_megamenu_title">Gadgets</span>
+																			</span>
+						</a>
+																				<div class="sm-megamenu-child sm_megamenu_dropdown_6columns ">
+									<div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_6 sm_megamenu_firstcolumn    "><div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_6    "><div class="sm_megamenu_head_item"><div class="sm_megamenu_title  "><a  class="sm_megamenu_nodrop " href="https://doto.com.mx/gadgets/smartwatch.html"  ><span class="sm_megamenu_title_lv-2">Smartwatch</span></a></div></div></div><div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_6 sm_megamenu_firstcolumn    "><div class="sm_megamenu_head_item"><div class="sm_megamenu_title  "><a  class="sm_megamenu_nodrop " href="https://doto.com.mx/gadgets/otros.html"  ><span class="sm_megamenu_title_lv-2">Otros</span></a></div></div></div></div>								</div>
+												</li>
+							</ul>
+		</div>
+	</nav>
+
+<script type="text/javascript">
+	require(["jquery", "mage/template"], function($) {
+		var menu_width = $('.sm_megamenu_wrapper_horizontal_menu').width();
+		$('.sm_megamenu_wrapper_horizontal_menu .sm_megamenu_menu > li > div').each(function () {
+			$this = $(this);
+			var lv2w = $this.width();
+			var lv2ps = $this.position();
+			var lv2psl = $this.position().left;
+			var sw = lv2w + lv2psl;
+			if (sw > menu_width) {
+				$this.css({'right': '0'});
+			}
+		});
+		var _item_active = $('div.sm_megamenu_actived');
+		if(_item_active.length){
+			_item_active.each(function(){
+				var _self = $(this), _parent_active =  _self.parents('.sm_megamenu_title') ,_level1 = _self.parents('.sm_megamenu_lv1');
+				if(_parent_active.length  ){
+					_parent_active.each(function(){
+						if(!$(this).hasClass('sm_megamenu_actived'))
+							$(this).addClass('sm_megamenu_actived');
+					});
+				}
+
+				if(_level1.length && !_level1.hasClass('sm_megamenu_actived')){
+					_level1.addClass('sm_megamenu_actived');
+				}
+			});
+		}
+	});
+</script>
+<script type="text/javascript">
+	require([
+		'jquery',
+		'domReady!'
+	], function ($) {
+		var limit;
+		limit = 12;
+		var i;
+		i=0;
+
+		if($(window).width() <= 1200) {
+				limit = 9;
+		}
+
+
+
+		var items;
+		items = $('.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu > li').length;
+
+		if(items > limit){
+			$('.sm_megamenu_wrapper_vertical_menu .sambar-inner').append('<div class="more-w"><span class="more-view">More Categories</span></div>');
+
+			$('.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu > li').each(function(){
+				i++;
+				if( i > limit ){
+					$(this).css('display', 'none');
+				}
+			});
+
+			$('.sm_megamenu_wrapper_vertical_menu .sambar-inner .more-w > .more-view').click(function(){
+				if($(this).hasClass('open')){
+					i=0;
+					$('.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu > li').each(function(){
+						i++;
+						if(i>limit){
+							$(this).slideUp(200);
+						}
+					});
+					$(this).removeClass('open');
+					$('.more-w').removeClass('active-i');
+					$(this).text('More Categories');
+				}else{
+					i=0;
+					$('.sm_megamenu_wrapper_vertical_menu ul.sm_megamenu_menu > li').each(function(){
+						i++;
+						if(i>limit){
+							$(this).slideDown(200);
+						}
+					});
+					$(this).addClass('open');
+					$('.more-w').addClass('active-i');
+					$(this).text('Close Menu');
+				}
+			});
+
+		}
+
+	});
+</script></div>						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-10 col-md-10 hidden-sm hidden-xs main-megamenu">
+									<nav class="sm_megamenu_wrapper_horizontal_menu sambar" id="sm_megamenu_menu5dce3f9c1c1d9" data-sam="11137080441573797788">
+		<div class="sambar-inner">
+					<span class="btn-sambar" data-sapi="collapse" data-href="#sm_megamenu_menu5dce3f9c1c1d9">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</span>
+			<ul class="sm-megamenu-hover sm_megamenu_menu sm_megamenu_menu_black" data-jsapi="on">
+
+														<li class="other-toggle 							sm_megamenu_lv1 sm_megamenu_drop parent    ">
+						<a class="sm_megamenu_head sm_megamenu_drop sm_megamenu_haschild" href="https://doto.com.mx/audio.html"  id="sm_megamenu_187">
+																<span class="sm_megamenu_icon sm_megamenu_nodesc">
+																								<span class="sm_megamenu_title">Audio</span>
+																			</span>
+						</a>
+																				<div class="sm_megamenu_dropdown_1column ">
+									<div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_1 sm_megamenu_firstcolumn    "><div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_1    "><div class="sm_megamenu_head_item"><div class="sm_megamenu_title  "><a  class="sm_megamenu_nodrop " href="https://doto.com.mx/audio/audifonos.html"  ><span class="sm_megamenu_title_lv-2">Audífonos</span></a></div></div></div><div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_1 sm_megamenu_firstcolumn    "><div class="sm_megamenu_head_item"><div class="sm_megamenu_title  "><a  class="sm_megamenu_nodrop " href="https://doto.com.mx/audio/bocinas.html"  ><span class="sm_megamenu_title_lv-2">Bocinas</span></a></div></div></div></div>								</div>
+												</li>
+														<li class="other-toggle 							sm_megamenu_lv1 sm_megamenu_drop parent    ">
+						<a class="sm_megamenu_head sm_megamenu_drop sm_megamenu_haschild" href="https://doto.com.mx/celulares"  id="sm_megamenu_185">
+																<span class="sm_megamenu_icon sm_megamenu_nodesc">
+																								<span class="sm_megamenu_title">Celulares</span>
+																			</span>
+						</a>
+																				<div class="sm_megamenu_dropdown_1column ">
+									<div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_1 sm_megamenu_firstcolumn    "><div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_1    "><div class="sm_megamenu_head_item"><div class="sm_megamenu_title  "><a  class="sm_megamenu_nodrop " href="https://doto.com.mx/celulares/ios.html"  ><span class="sm_megamenu_title_lv-2">iPhone</span></a></div></div></div><div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_1 sm_megamenu_firstcolumn    "><div class="sm_megamenu_head_item"><div class="sm_megamenu_title  "><a  class="sm_megamenu_nodrop " href="https://doto.com.mx/celulares/android.html"  ><span class="sm_megamenu_title_lv-2">Android</span></a></div></div></div><div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_1 sm_megamenu_firstcolumn    "><div class="sm_megamenu_head_item"><div class="sm_megamenu_title  "><a  class="sm_megamenu_nodrop " href="https://doto.com.mx/celulares/accesorios.html"  ><span class="sm_megamenu_title_lv-2">Accesorios</span></a></div></div></div><div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_1 sm_megamenu_firstcolumn    "><div class="sm_megamenu_head_item"><div class="sm_megamenu_title  "><a  class="sm_megamenu_nodrop " href="https://doto.com.mx/celulares/fundas.html"  ><span class="sm_megamenu_title_lv-2">Fundas</span></a></div></div></div><div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_1 sm_megamenu_firstcolumn    "><div class="sm_megamenu_head_item"><div class="sm_megamenu_title  "><a  class="sm_megamenu_nodrop " href="https://doto.com.mx/celulares/samsung.html"  ><span class="sm_megamenu_title_lv-2">Samsung</span></a></div></div></div><div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_1 sm_megamenu_firstcolumn    "><div class="sm_megamenu_head_item"><div class="sm_megamenu_title  "><a  class="sm_megamenu_nodrop " href="https://doto.com.mx/celulares/huawei.html"  ><span class="sm_megamenu_title_lv-2">Huawei</span></a></div></div></div><div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_1 sm_megamenu_firstcolumn    "><div class="sm_megamenu_head_item"><div class="sm_megamenu_title  "><a  class="sm_megamenu_nodrop " href="https://doto.com.mx/celulares/honor.html"  ><span class="sm_megamenu_title_lv-2">Honor</span></a></div></div></div><div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_1 sm_megamenu_firstcolumn    "><div class="sm_megamenu_head_item"><div class="sm_megamenu_title  "><a  class="sm_megamenu_nodrop " href="https://doto.com.mx/celulares/xiaomi.html"  ><span class="sm_megamenu_title_lv-2">Xiaomi</span></a></div></div></div></div>								</div>
+												</li>
+														<li class="other-toggle 							sm_megamenu_lv1 sm_megamenu_drop parent    ">
+						<a class="sm_megamenu_head sm_megamenu_drop sm_megamenu_haschild" href="https://doto.com.mx/computo.html"  id="sm_megamenu_186">
+																<span class="sm_megamenu_icon sm_megamenu_nodesc">
+																								<span class="sm_megamenu_title">Cómputo</span>
+																			</span>
+						</a>
+																				<div class="sm_megamenu_dropdown_1column ">
+									<div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_1 sm_megamenu_firstcolumn    "><div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_1    "><div class="sm_megamenu_head_item"><div class="sm_megamenu_title  "><a  class="sm_megamenu_nodrop " href="https://doto.com.mx/computo/mac-os.html"  ><span class="sm_megamenu_title_lv-2">Mac&nbsp;OS</span></a></div></div></div><div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_1 sm_megamenu_firstcolumn    "><div class="sm_megamenu_head_item"><div class="sm_megamenu_title  "><a  class="sm_megamenu_nodrop " href="https://doto.com.mx/computo/windows.html"  ><span class="sm_megamenu_title_lv-2">Windows</span></a></div></div></div><div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_1 sm_megamenu_firstcolumn    "><div class="sm_megamenu_head_item"><div class="sm_megamenu_title  "><a  class="sm_megamenu_nodrop " href="https://doto.com.mx/computo/accesorios.html"  ><span class="sm_megamenu_title_lv-2">Accesorios</span></a><div class="sm_megamenu_title "><a class="sm_megamenu_nodrop" href="https://doto.com.mx/computo/accesorios/teclados-y-mouse.html" ><span class="sm_megamenu_title_lv-2">Teclados&nbsp;y&nbsp;Mouse</span></a></div><div class="sm_megamenu_title "><a class="sm_megamenu_nodrop" href="https://doto.com.mx/computo/accesorios/mochilas.html" ><span class="sm_megamenu_title_lv-2">Mochilas</span></a></div><div class="sm_megamenu_title "><a class="sm_megamenu_nodrop" href="https://doto.com.mx/computo/accesorios/almacenamiento.html" ><span class="sm_megamenu_title_lv-2">Almacenamiento</span></a></div><div class="sm_megamenu_title "><a class="sm_megamenu_nodrop" href="https://doto.com.mx/computo/accesorios/otros.html" ><span class="sm_megamenu_title_lv-2">Otros</span></a></div></div></div></div></div>								</div>
+												</li>
+														<li class="other-toggle 							sm_megamenu_lv1 sm_megamenu_drop parent    ">
+						<a class="sm_megamenu_head sm_megamenu_drop sm_megamenu_haschild" href="https://doto.com.mx/tablets.html"  id="sm_megamenu_189">
+																<span class="sm_megamenu_icon sm_megamenu_nodesc">
+																								<span class="sm_megamenu_title">Tablets</span>
+																			</span>
+						</a>
+																				<div class="sm_megamenu_dropdown_1column ">
+									<div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_1 sm_megamenu_firstcolumn    "><div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_1    "><div class="sm_megamenu_head_item"><div class="sm_megamenu_title  "><a  class="sm_megamenu_nodrop " href="https://doto.com.mx/tablets/ipad.html"  ><span class="sm_megamenu_title_lv-2">iPad</span></a></div></div></div><div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_1 sm_megamenu_firstcolumn    "><div class="sm_megamenu_head_item"><div class="sm_megamenu_title  "><a  class="sm_megamenu_nodrop " href="https://doto.com.mx/tablets/android-tablets.html"  ><span class="sm_megamenu_title_lv-2">Android&nbsp;Tablets</span></a></div></div></div><div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_1 sm_megamenu_firstcolumn    "><div class="sm_megamenu_head_item"><div class="sm_megamenu_title  "><a  class="sm_megamenu_nodrop " href="https://doto.com.mx/tablets/surface.html"  ><span class="sm_megamenu_title_lv-2">Surface</span></a></div></div></div><div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_1 sm_megamenu_firstcolumn    "><div class="sm_megamenu_head_item"><div class="sm_megamenu_title  "><a  class="sm_megamenu_nodrop " href="https://doto.com.mx/tablets/accesorios.html"  ><span class="sm_megamenu_title_lv-2">Accesorios</span></a></div></div></div></div>								</div>
+												</li>
+														<li class="other-toggle 							sm_megamenu_lv1 sm_megamenu_drop parent    ">
+						<a class="sm_megamenu_head sm_megamenu_drop sm_megamenu_haschild" href="https://doto.com.mx/videojuegos.html"  id="sm_megamenu_188">
+																<span class="sm_megamenu_icon sm_megamenu_nodesc">
+																								<span class="sm_megamenu_title">Videojuegos</span>
+																			</span>
+						</a>
+																				<div class="sm_megamenu_dropdown_1column ">
+									<div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_1 sm_megamenu_firstcolumn    "><div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_1    "><div class="sm_megamenu_head_item"><div class="sm_megamenu_title  "><a  class="sm_megamenu_nodrop " href="https://doto.com.mx/videojuegos/playstation.html"  ><span class="sm_megamenu_title_lv-2">Playstation</span></a></div></div></div><div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_1 sm_megamenu_firstcolumn    "><div class="sm_megamenu_head_item"><div class="sm_megamenu_title  "><a  class="sm_megamenu_nodrop " href="https://doto.com.mx/videojuegos/xbox.html"  ><span class="sm_megamenu_title_lv-2">XBOX</span></a></div></div></div><div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_1 sm_megamenu_firstcolumn    "><div class="sm_megamenu_head_item"><div class="sm_megamenu_title  "><a  class="sm_megamenu_nodrop " href="https://doto.com.mx/videojuegos/nintendo.html"  ><span class="sm_megamenu_title_lv-2">Nintendo</span></a></div></div></div><div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_1 sm_megamenu_firstcolumn    "><div class="sm_megamenu_head_item"><div class="sm_megamenu_title  "><a  class="sm_megamenu_nodrop " href="https://doto.com.mx/videojuegos/accesorios.html"  ><span class="sm_megamenu_title_lv-2">Accesorios</span></a></div></div></div></div>								</div>
+												</li>
+														<li class="other-toggle 							sm_megamenu_lv1 sm_megamenu_drop parent    ">
+						<a class="sm_megamenu_head sm_megamenu_drop " href="https://doto.com.mx/televisiones.html"  id="sm_megamenu_248">
+																<span class="sm_megamenu_icon sm_megamenu_nodesc">
+																								<span class="sm_megamenu_title">Televisiones</span>
+																			</span>
+						</a>
+																													<li class="other-toggle 							sm_megamenu_lv1 sm_megamenu_drop parent    ">
+						<a class="sm_megamenu_head sm_megamenu_drop " href="https://doto.com.mx/camaras.html"  id="sm_megamenu_249">
+																<span class="sm_megamenu_icon sm_megamenu_nodesc">
+																								<span class="sm_megamenu_title">Cámaras</span>
+																			</span>
+						</a>
+																													<li class="other-toggle 							sm_megamenu_lv1 sm_megamenu_drop parent    ">
+						<a class="sm_megamenu_head sm_megamenu_drop sm_megamenu_haschild" href="https://doto.com.mx/gadgets.html"  id="sm_megamenu_243">
+																<span class="sm_megamenu_icon sm_megamenu_nodesc">
+																								<span class="sm_megamenu_title">Gadgets</span>
+																			</span>
+						</a>
+																				<div class="sm_megamenu_dropdown_1column ">
+									<div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_1 sm_megamenu_firstcolumn    "><div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_1    "><div class="sm_megamenu_head_item"><div class="sm_megamenu_title  "><a  class="sm_megamenu_nodrop " href="https://doto.com.mx/gadgets/otros.html"  ><span class="sm_megamenu_title_lv-2">Otros</span></a></div></div></div><div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_1 sm_megamenu_firstcolumn    "><div class="sm_megamenu_head_item"><div class="sm_megamenu_title  "><a  class="sm_megamenu_nodrop " href="https://doto.com.mx/gadgets/smartwatch.html"  ><span class="sm_megamenu_title_lv-2">Smartwatch</span></a></div></div></div><div data-link="https://doto.com.mx/customer/account/create/" class="sm_megamenu_col_1 sm_megamenu_firstcolumn    "><div class="sm_megamenu_head_item"><div class="sm_megamenu_title  "><a  class="sm_megamenu_nodrop " href="https://doto.com.mx/gadgets/smart-home.html"  ><span class="sm_megamenu_title_lv-2">Smart&nbsp;Home</span></a></div></div></div></div>								</div>
+												</li>
+							</ul>
+		</div>
+	</nav>
+
+<script type="text/javascript">
+	require(["jquery", "mage/template"], function($) {
+		var menu_width = $('.sm_megamenu_wrapper_horizontal_menu').width();
+		$('.sm_megamenu_wrapper_horizontal_menu .sm_megamenu_menu > li > div').each(function () {
+			$this = $(this);
+			var lv2w = $this.width();
+			var lv2ps = $this.position();
+			var lv2psl = $this.position().left;
+			var sw = lv2w + lv2psl;
+			if (sw > menu_width) {
+				$this.css({'right': '0'});
+			}
+		});
+		var _item_active = $('div.sm_megamenu_actived');
+		if(_item_active.length){
+			_item_active.each(function(){
+				var _self = $(this), _parent_active =  _self.parents('.sm_megamenu_title') ,_level1 = _self.parents('.sm_megamenu_lv1');
+				if(_parent_active.length  ){
+					_parent_active.each(function(){
+						if(!$(this).hasClass('sm_megamenu_actived'))
+							$(this).addClass('sm_megamenu_actived');
+					});
+				}
+
+				if(_level1.length && !_level1.hasClass('sm_megamenu_actived')){
+					_level1.addClass('sm_megamenu_actived');
+				}
+			});
+		}
+	$(' .sm_megamenu_wrapper_horizontal_menu li.home-item-parent > a.sm_megamenu_head ').attr('href', 'https://doto.com.mx/');
+	});
+</script>					<style>
+.header-style-1 .header-bottom .main-megamenu .black-friday a.buzz::before {
+
+background : none !important;
+}
+</style>
+
+<div class="black-friday pull-right hidden-xs hidden-sm hidden-md"><a class="buzz"  href="/ofertas-especiales.html" >Ofertas Especiales</a></div>
+				</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<main id="maincontent" class="page-main"><a id="contentarea" tabindex="-1"></a>
+<div class="columns col1-layout"><div class="container"><div class="row"><div class="col-lg-12 col-md-12"><div class="page-title-wrapper">
+    <h1 class="page-title"
+                >
+        <span class="base" data-ui-id="page-title-wrapper" >Crear nueva cuenta de cliente</span>    </h1>
+    </div>
+<div class="page messages"><div data-placeholder="messages"></div>
+<div data-bind="scope: 'messages'">
+    <!-- ko if: cookieMessages && cookieMessages.length > 0 -->
+    <div role="alert" data-bind="foreach: { data: cookieMessages, as: 'message' }" class="messages">
+        <div data-bind="attr: {
+            class: 'message-' + message.type + ' ' + message.type + ' message',
+            'data-ui-id': 'message-' + message.type
+        }">
+            <div data-bind="html: message.text"></div>
+        </div>
+    </div>
+    <!-- /ko -->
+    <!-- ko if: messages().messages && messages().messages.length > 0 -->
+    <div role="alert" data-bind="foreach: { data: messages().messages, as: 'message' }" class="messages">
+        <div data-bind="attr: {
+            class: 'message-' + message.type + ' ' + message.type + ' message',
+            'data-ui-id': 'message-' + message.type
+        }">
+            <div data-bind="html: message.text"></div>
+        </div>
+    </div>
+    <!-- /ko -->
+</div>
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                        "messages": {
+                            "component": "Magento_Theme/js/view/messages"
+                        }
+                    }
+                }
+            }
+    }
+</script>
+</div><div class="column main"><input name="form_key" type="hidden" value="OL2okeTz7z1iAbMA" />    <script data-role='loyaltylion' data-bind="scope: 'lionCustomer'">
+!function(n,o){function t(o){var t=n.getElementsByTagName("script")[0],i=n.createElement("script");i.src=o,i.crossOrigin="",t.parentNode.insertBefore(i,t)}if(!o.isLoyaltyLion){window.loyaltylion=o,void 0===window.lion&&(window.lion=o),o.version=2,o.isLoyaltyLion=!0;var i=new Date;t("https://sdk.loyaltylion.net/static/2/loader.js?t="+i.getFullYear()+i.getMonth()+i.getDate());var e=!1;o.init=function(n){if(e)throw new Error("Cannot call lion.init more than once");e=!0;var i=o._token=n.token;if(!i)throw new Error("Token must be supplied to lion.init");for(var r=[],a="_push configure bootstrap shutdown on removeListener".split(" "),l=0;l<a.length;l+=1)!function(n,o){n[o]=function(){r.push([o,Array.prototype.slice.call(arguments,0)])}}(o,a[l]);t("https://sdk.loyaltylion.net/sdk/start/"+i+".js"),o._initData=n,o._buffer=r}}}(document,window.loyaltylion||[]);
+lion.init({ token: "3747a20506bc80b5fd3be80924f3afa4" });
+    </script>
+    <script type="text/x-magento-init">
+    {"[data-role='loyaltylion']": {"Magento_Ui/js/core/app": {"components":{"lionCustomer":{"component":"Loyaltylion_Core\/js\/view\/lion-customer"}}}}}
+    </script>
+<div id="authenticationPopup" data-bind="scope:'authenticationPopup'" style="display: none;">
+    <script>
+        window.authenticationPopup = {"autocomplete":"off","customerRegisterUrl":"https:\/\/doto.com.mx\/customer\/account\/create\/","customerForgotPasswordUrl":"https:\/\/doto.com.mx\/customer\/account\/forgotpassword\/","baseUrl":"https:\/\/doto.com.mx\/"};
+    </script>
+    <!-- ko template: getTemplate() --><!-- /ko -->
+    <script type="text/x-magento-init">
+        {
+            "#authenticationPopup": {
+                "Magento_Ui/js/core/app": {"components":{"authenticationPopup":{"component":"Magento_Customer\/js\/view\/authentication-popup","children":{"messages":{"component":"Magento_Ui\/js\/view\/messages","displayArea":"messages"},"captcha":{"component":"Magento_Captcha\/js\/view\/checkout\/loginCaptcha","displayArea":"additional-login-form-fields","formId":"user_login","configSource":"checkout"}}}}}            },
+            "*": {
+                "Magento_Ui/js/block-loader": "https\u003A\u002F\u002Fdoto.com.mx\u002Fpub\u002Fstatic\u002Fversion1573793901\u002Ffrontend\u002FSm\u002Fsmarket\u002Fes_MX\u002Fimages\u002Floader\u002D1.gif"
+            }
+        }
+    </script>
+</div>
+<script type="text/x-magento-init">
+{"*":{"Magento_Customer\/js\/section-config":{"sections":{"stores\/store\/switch":"*","directory\/currency\/switch":"*","*":["messages"],"reclaim\/checkout\/reload":["cart"],"customer\/account\/logout":["lion-customer","recently_viewed_product","recently_compared_product"],"customer\/account\/loginpost":["lion-customer"],"customer\/account\/createpost":["lion-customer"],"customer\/ajax\/login":["lion-customer","checkout-data","cart"],"customer\/account\/editpost":"*","catalog\/product_compare\/add":["compare-products"],"catalog\/product_compare\/remove":["compare-products"],"catalog\/product_compare\/clear":["compare-products"],"sales\/guest\/reorder":["cart"],"sales\/order\/reorder":["cart"],"checkout\/cart\/add":["cart","gtm"],"checkout\/cart\/delete":["cart","gtm"],"checkout\/cart\/updatepost":["cart"],"checkout\/cart\/updateitemoptions":["cart"],"checkout\/cart\/couponpost":["cart"],"checkout\/cart\/estimatepost":["cart"],"checkout\/cart\/estimateupdatepost":["cart"],"checkout\/onepage\/saveorder":["cart","checkout-data","last-ordered-items","checkout-fields"],"checkout\/sidebar\/removeitem":["cart","gtm"],"checkout\/sidebar\/updateitemqty":["cart"],"rest\/*\/v1\/carts\/*\/payment-information":["cart","checkout-data","last-ordered-items","instant-purchase","gtm"],"rest\/*\/v1\/guest-carts\/*\/payment-information":["cart","checkout-data","gtm"],"rest\/*\/v1\/guest-carts\/*\/selected-payment-method":["cart","checkout-data"],"rest\/*\/v1\/carts\/*\/selected-payment-method":["cart","checkout-data","instant-purchase"],"authorizenet\/directpost_payment\/place":["cart","checkout-data"],"customer\/address\/*":["instant-purchase"],"customer\/account\/*":["instant-purchase"],"vault\/cards\/deleteaction":["instant-purchase"],"multishipping\/checkout\/overviewpost":["cart"],"paypal\/express\/placeorder":["cart","checkout-data"],"paypal\/payflowexpress\/placeorder":["cart","checkout-data"],"wishlist\/index\/add":["wishlist"],"wishlist\/index\/remove":["wishlist"],"wishlist\/index\/updateitemoptions":["wishlist"],"wishlist\/index\/update":["wishlist"],"wishlist\/index\/cart":["wishlist","cart"],"wishlist\/index\/fromcart":["wishlist","cart"],"wishlist\/index\/allcart":["wishlist","cart"],"wishlist\/shared\/allcart":["wishlist","cart"],"wishlist\/shared\/cart":["cart"],"braintree\/paypal\/placeorder":["cart","checkout-data"],"cartquickpro\/cart\/add":["cart"],"cartquickpro\/cart\/delete":["cart"],"cartquickpro\/sidebar\/removeitem":["cart"],"cartquickpro\/sidebar\/updateitemqty":["cart"],"cartquickpro\/cart\/updateitemoptions":["cart"],"cartquickpro\/product_compare\/add":["compare-products"],"cartquickpro\/product_compare\/remove":["compare-products"],"cartquickpro\/product_compare\/clear":["compare-products"],"cartquickpro\/wishlist_index\/add":["wishlist"],"cartquickpro\/wishlist_index\/remove":["wishlist"],"cartquickpro\/wishlist_index\/updateitemoptions":["wishlist"],"cartquickpro\/wishlist_index\/update":["wishlist"],"cartquickpro\/wishlist_index\/cart":["wishlist","cart"],"cartquickpro\/wishlist_index\/fromcart":["cart","checkout-data","wishlist"],"cartquickpro\/wishlist_index\/allcart":["wishlist","cart"],"rest\/*\/v1\/guest-carts\/*\/collection-point\/select":["collection-point-result"],"rest\/*\/v1\/carts\/mine\/collection-point\/select":["collection-point-result"],"checkout\/cart\/configure":["gtm"],"rest\/*\/v1\/guest-carts\/*\/shipping-information":["gtm"],"rest\/*\/v1\/carts\/*\/shipping-information":["gtm"]},"clientSideSections":["checkout-data","cart-data"],"baseUrls":["https:\/\/doto.com.mx\/"]}}}</script>
+<script type="text/x-magento-init">
+{"*":{"Magento_Customer\/js\/customer-data":{"sectionLoadUrl":"https:\/\/doto.com.mx\/customer\/section\/load\/","expirableSectionLifetime":60,"expirableSectionNames":["cart"],"cookieLifeTime":"86400","updateSessionUrl":"https:\/\/doto.com.mx\/customer\/account\/updateSession\/"}}}</script>
+<script type="text/x-magento-init">
+{"*":{"Magento_Customer\/js\/invalidation-processor":{"invalidationRules":{"website-rule":{"Magento_Customer\/js\/invalidation-rules\/website-rule":{"scopeConfig":{"websiteId":1}}}}}}}</script>
+<script type="text/x-magento-init">
+    {
+        "body": {
+            "pageCache": {"url":"https:\/\/doto.com.mx\/page_cache\/block\/render\/","handles":["default","customer_account_create","searchanise_handler"],"originalRequest":{"route":"customer","controller":"account","action":"create","uri":"\/customer\/account\/create\/"},"versionCookieName":"private_content_version"}        }
+    }
+</script>
+<form class="form create account form-create-account" action="https://doto.com.mx/customer/account/createpost/" method="post" id="form-validate" enctype="multipart/form-data" autocomplete="off">
+    <input name="form_key" type="hidden" value="OL2okeTz7z1iAbMA" />    <fieldset class="fieldset create info">
+        <legend class="legend"><span>Información Personal</span></legend><br>
+        <input type="hidden" name="success_url" value="">
+        <input type="hidden" name="error_url" value="">
+
+            <div class="field field-name-firstname required">
+            <label class="label" for="firstname">
+                <span>Nombre</span>
+            </label>
+
+            <div class="control">
+                <input type="text" id="firstname"
+                       name="firstname"
+                       value=""
+                       title="Nombre"
+                       class="input-text required-entry"  data-validate="{required:true}">
+            </div>
+        </div>
+            <div class="field field-name-lastname required">
+            <label class="label" for="lastname">
+                <span>Apellido</span>
+            </label>
+
+            <div class="control">
+                <input type="text" id="lastname"
+                       name="lastname"
+                       value=""
+                       title="Apellido"
+                       class="input-text required-entry"  data-validate="{required:true}">
+            </div>
+        </div>
+
+                        <div class="field choice newsletter">
+                <input type="checkbox" name="is_subscribed" title="Suscribirse&#x20;al&#x20;bolet&#xED;n&#x20;de&#x20;noticias" value="1" id="is_subscribed" class="checkbox">
+                <label for="is_subscribed" class="label"><span>Suscribirse al boletín de noticias</span></label>
+            </div>
+
+
+
+                    </fieldset>
+        <fieldset class="fieldset create account" data-hasrequired="&#x2A;&#x20;Campos&#x20;Requeridos">
+        <legend class="legend"><span>Información de inicio de sesión</span></legend><br>
+        <div class="field required">
+            <label for="email_address" class="label"><span>Correo electrónico</span></label>
+            <div class="control">
+                <input type="email" name="email" autocomplete="email" id="email_address" value="" title="Correo&#x20;electr&#xF3;nico" class="input-text" data-validate="{required:true, 'validate-email':true}">
+            </div>
+        </div>
+        <div class="field password required">
+            <label for="password" class="label"><span>Contraseña</span></label>
+            <div class="control">
+                <input type="password" name="password" id="password"
+                       title="Contrase&#xF1;a"
+                       class="input-text"
+                       data-password-min-length="8"
+                       data-password-min-character-sets="3"
+                       data-validate="{required:true, 'validate-customer-password':true}"
+                       autocomplete="off">
+                <div id="password-strength-meter-container" data-role="password-strength-meter" aria-live="polite">
+                    <div id="password-strength-meter" class="password-strength-meter">
+                        Seguridad de contraseña:
+                        <span id="password-strength-meter-label" data-role="password-strength-meter-label">
+                            Sin contraseña                        </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="field confirmation required">
+            <label for="password-confirmation" class="label"><span>Confirmar contraseña</span></label>
+            <div class="control">
+                <input type="password" name="password_confirmation" title="Confirmar&#x20;contrase&#xF1;a" id="password-confirmation" class="input-text" data-validate="{required:true, equalTo:'#password'}" autocomplete="off">
+            </div>
+        </div>
+        <div id="remember-me-box" class="field choice persistent">
+        <input type="checkbox" name="persistent_remember_me" class="checkbox" id="remember_meZX7BOYmxuq" checked="checked" title="Recordarme" />
+    <label for="remember_meZX7BOYmxuq" class="label"><span>Recordarme</span></label>
+    <span class="tooltip wrapper">
+        <a class="link tooltip toggle" href="#">¿Qué es esto?</a>
+        <span class="tooltip content">
+            Selecciona \&#039;Recordarme\&#039; para accesar a tu carrito de compras en esta computadora incluso si no has iniciado sesión.        </span>
+    </span>
+</div>
+    </fieldset>
+    <div class="actions-toolbar">
+        <div class="primary">
+            <button type="submit" class="action submit primary" title="Crear&#x20;una&#x20;Cuenta"><span>Crear una Cuenta</span></button>
+        </div>
+        <div class="secondary">
+            <a class="action back" href="https://doto.com.mx/customer/account/login/referer/aHR0cHM6Ly9kb3RvLmNvbS5teC9jdXN0b21lci9hY2NvdW50L2NyZWF0ZS8%2C/"><span>Volver</span></a>
+        </div>
+    </div>
+</form>
+<script>
+require([
+    'jquery',
+    'mage/mage'
+], function($){
+
+    var dataForm = $('#form-validate');
+    var ignore = null;
+
+    dataForm.mage('validation', {
+            ignore: ignore ? ':hidden:not(' + ignore + ')' : ':hidden'
+        }).find('input:text').attr('autocomplete', 'off');
+
+});
+</script>
+
+<script type="text/x-magento-init">
+    {
+        ".field.password": {
+            "passwordStrengthIndicator": {
+                "formSelector": "form.form-create-account"
+            }
+        }
+    }
+</script>
+<script type="text/x-magento-init">
+    {
+        "body": {
+            "requireCookie": {"noCookieUrl":"https:\/\/doto.com.mx\/cookie\/index\/noCookies\/","triggers":[".action.submit"]}        }
+    }
+</script>
+</div></div></div></div></div></main><footer class="page-footer"><div class="footer footer-wrapper"><div class="footer-container style-footer1">
+	<div class="footer-wrapper">
+		<div class="container">
+			<div class="footer-top">
+
+
+<div class="row">
+
+<div class="col-md-3 col-sm-6 col-xs-12 support-footer">
+	        <div class="footer-block">
+			<div class="footer-block-title">
+                                <h3 class="g2font">Dirección</h3>
+			</div>
+			<div class="footer-block-content">
+				<ul class="links-contact">
+					<li><a href="https://goo.gl/maps/fGoKCnqQm7m" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;Av. de las Fuentes 41 -A,<br>
+					Despacho No.702<br>
+					CP. 53970<br>
+                                        Naucalpan, Estado de México.</a>
+				</ul>
+			</div>
+                </div>
+        </div>
+<div class="col-md-3 col-sm-6 col-xs-12 support-footer">
+		<div class="footer-block">
+			<div class="footer-block-title">
+				<!-- <h3 class="g2font">Support</h3> -->
+                                <h3 class="g2font">Información</h3>
+			</div>
+			<div class="footer-block-content">
+				<ul class="links-footer">
+					<li>
+						<a href="/terminos-y-condiciones">Términos y Condiciones</a><br>
+						<a href="/preguntas-frecuentes">Preguntas Frecuentes</a><br>
+						<a href="/aviso-de-privacidad">Aviso de Privacidad</a><br>
+						<a href="/Es-seguro-comprar-en-doto">Opiniones de nuestros clientes</a><br>
+						 <a href="/aliexpress">Ventajas de comprar en doto</a><br>
+						 <a href="/programa-de-dotopoints">Programa de dotopoints</a><br>
+						 <a href="/quienes-somos">¿Quiénes somos?</a><br>
+						<a href="/envios">Envíos</a><br>
+						<a href="/garantias">Garantías</a><br>
+						<a href="/devoluciones">Devoluciones</a><br>
+						<a href="/como-comprar">¿Cómo comprar?</a> <br>
+						<a href="/facturar">Solicitar Factura</a> <br>
+						<a href="/blog">Blog</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="col-md-3 col-sm-6 col-xs-12 contact-footer">
+		<div class="footer-block">
+			<div class="footer-block-title">
+				<!-- <h3 class="g2font">CONTACT INFO</h3> -->
+                                <h3 class="g2font">Sello de confianza</h3>
+			</div>
+			<div class="footer-block-content">
+				<ul class="links-contact">
+                                        <li><a href="https://sellosdeconfianza.org.mx/MuestraCertificado.php?NUMERO_SERIE=MD_x006" target="_blank"><img src="https://doto.com.mx/pub/media/wysiwyg/logo-footer/sellodeconfianzadoto.svg" alt="footer-confianza" style="width:150px"/></a></li>
+				</ul>
+			</div>
+                       <div class="footer-block-title">
+				<!-- <h3 class="g2font">CONTACT INFO</h3> -->
+                                <h3 class="g2font">Miembro AMVO </h3>
+			</div>
+			<div class="footer-block-content">
+				<ul class="links-contact">
+                                        <li><a href="https://www.amvo.org.mx/miembros" target="_blank"><img src="https://doto.com.mx/pub/media/wysiwyg/logo-footer/logoamvodoto.svg" alt="footer-confianza" style="width:150px"/>
+
+</a></li>
+
+				</ul>
+			</div>
+		</div>
+
+	</div>
+	<div class="col-md-3 col-sm-6 col-xs-12 newletter-footer">
+	<div class="block-subscribe-footer footer-block">
+    <div class="footer-block-title">
+         <h3 class="g2font">¡SUSCRÍBETE A NUESTRO NEWSLETTER!</h3>
+    </div>
+   <div class="info-newsletter">
+
+    <form class="form subscribe"
+            novalidate
+            action="https://doto.com.mx/newsletter/subscriber/new/"
+            method="post"
+            data-mage-init='{"validation": {"errorClass": "mage-error"}}'
+            id="newsletter-footer-validate-detail">
+
+            <div class="input-box">
+                <input name="email" type="email" id="newsletter-footer"
+                                placeholder="Ingresa tu email"
+                                data-validate="{required:true, 'validate-email':true}"/>
+                <button class="action subscribe primary" title="Suscribirse" type="submit">
+                  <span> Suscribirse</span>
+                 </button>
+            </div>
+    </form>
+    </div>
+</div>
+
+	</div>
+</div>			</div>
+			<div class="footer-middle">
+				<!-- <p><a class="mr30" href="#"><img src="https://doto.com.mx/pub/media/wysiwyg/banner/img-ft.jpg" alt="" /></a></p> -->
+<p>Opciones de pago:  <img src="https://doto.com.mx/pub/media/wysiwyg/banner/Metodos-de-pago-doto-Mexico-abril-2019.png" alt="Payment" /></p>
+<!--<br>
+<p class="info-shop">* Todos nuestros productos con precio superior a $500 pesos incluyen envío gratis, el envío es de 1 a 2 días hábiles, de tal forma que las compras realizadas los días viernes después de las 14:00 hrs se contará como día hábil a partir del día Lunes siguiente a la compra.</p>
+<div class="payment-footer">
+</div>
+-->
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+			<div class="container">
+					<div class="copyright-footer">
+													<address>© 2017 Copyright. All rights reserved www.doto.com.mx</address>
+											</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--GO TO TOP-->
+	<a id="yt-totop" href="javascript:void(0)" title="Go to Top"></a>
+
+
+</div></footer><script type="text/x-magento-init">
+        {
+            "*": {
+                "Magento_Ui/js/core/app": {
+                    "components": {
+                        "storage-manager": {
+                            "component": "Magento_Catalog/js/storage-manager",
+                            "appendTo": "",
+                            "storagesConfiguration" :
+                                         {"recently_viewed_product":{"requestConfig":{"syncUrl":"https:\/\/doto.com.mx\/catalog\/product\/frontend_action_synchronize\/"},"lifetime":"1000","allowToSendRequest":null},"recently_compared_product":{"requestConfig":{"syncUrl":"https:\/\/doto.com.mx\/catalog\/product\/frontend_action_synchronize\/"},"lifetime":"1000","allowToSendRequest":null},"product_data_storage":{"updateRequestConfig":{"url":"https:\/\/doto.com.mx\/rest\/default\/V1\/products-render-info"},"allowToSendRequest":null}}                        }
+                    }
+                }
+            }
+        }
+</script>
+<script>(function (a, b, c, d, e, f, g) {
+a['CsdmObject'] = e; a[e] = a[e] || function () {
+(a[e].q = a[e].q || []).push(arguments)
+}, a[e].l = 1 * new Date(); f = b.createElement(c),
+g = b.getElementsByTagName(c)[0]; f.async = 1; f.src = d; g.parentNode.insertBefore(f, g)
+})(window, document, 'script', '//device.clearsale.com.br/m/cs.js', 'csdm');
+csdm('app', '');
+</script>
+<script>
+function initStampedJS(){
+  (function e(){var e=document.createElement("script");e.type="text/javascript",e.async=true,e.onload=initStamped,e.src="//cdn-stamped-io.azureedge.net/files/widget.min.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})();
+}
+
+function initStamped(){
+  StampedFn.init({
+    apiKey: 'pubkey-eisSq8gmRG5PE5Mg0sW5q8a8eGu182',
+    storeUrl: 'doto.com.mx'
+	});
+}
+
+function deferStampedJS(method) {
+    if (window.jQuery) {
+			initStampedJS();
+    } else {
+      setTimeout(function() {
+      deferStampedJS(initStampedJS) }, 1000);
+    }
+}
+deferStampedJS(initStampedJS);
+</script>
+
+<script type="text/javascript">
+require([
+	'jquery',
+	'quickView',
+	'domReady!'
+], function ($, cartQuickView) {
+	var quickViewCf = {
+		isQuickView: true,
+		isAjaxCart: true,
+		product_container : '.products-grid .item-inner,.products-list .item-inner',
+		button_container :'.box-image ,.box-image-list',
+		label_button : 'Quick View',
+		base_url : 'https://doto.com.mx/'
+	}
+	$(quickViewCf.product_container).cartQuickView(quickViewCf);
+	$( document ).on( "afterAjaxProductsLoaded", function( event) {
+		$(quickViewCf.product_container).cartQuickView(quickViewCf);
+	});
+});
+</script>
+<script type="text/x-magento-init">
+{
+	"#maincontent": {
+		"Sm_CartQuickPro/js/custom-addtocart": {
+			"isEnabled": true,
+			"isAjaxCart": true,
+			"urlLogin": "https://doto.com.mx/customer/account/login/",
+			"isLoggedIn": false,
+			"addUrl": "https://doto.com.mx/cartquickpro/cart/add",
+			"isUpdateConfigure": false,
+			"isCompareIndex": false,
+			"isProductView": false,
+			"isCheckoutPage":  false,
+			"isWishlistPage": false,
+			"urlCurrent": "https://doto.com.mx/customer/account/create/",
+			"countDownNumber": 5		}
+	}
+}
+</script>
+
+
+<div id="smcqp-container" style="display:none;">
+
+    <div data-role="loader" class="loading-mask" >
+        <div class="loader">
+            <img src="https://doto.com.mx/pub/static/version1573793901/frontend/Sm/smarket/es_MX/images/loader-1.gif"
+                 alt="Cargando...">
+        </div>
+    </div>
+    <div id="smcqp-contents">
+    </div>
+	<div id="smcqp-report" style="display:none;">
+		<div class="smcqp-messages">
+		</div>
+		<div class="smcqp-actions">
+
+			<a class="smcqp-continue spcqp-count" data-count="5" href="#" title="SEGUIR COMPRANDO">
+				SEGUIR COMPRANDO			</a>
+			<a class="smcqp-btn smcqp-view-cart " href="https://doto.com.mx/checkout/cart/" title="IR A PAGAR">
+				IR A PAGAR			</a>
+			<!-- <a class="smcqp-btn smcqp-view-compare " href="https://doto.com.mx/catalog/product_compare/index/" title="Comparar artículos">
+				Comparar artículos			</a>
+			<a class="smcqp-btn smcqp-view-wishlist " href="https://doto.com.mx/wishlist/" title="My Wishlist">
+				My Wishlist			-->
+			</a>
+		</div>
+	</div>
+
+</div>
+
+<div data-role="loader" class="loading-mask-shopby" style="display:none" >
+	<div class="loader">
+		<img src="https://doto.com.mx/pub/static/version1573793901/frontend/Sm/smarket/es_MX/images/loader-1.gif"
+			 alt="Cargando...">
+	</div>
+</div>
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.agent='dvapptrian';n.queue=[];
+t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '461164097604985');
+fbq('track', 'PageView');
+
+fbq('track', 'CompleteRegistration');
+
+</script>
+<noscript><img height="1" width="1" style="display:none" alt="Facebook Pixel"
+src="https://www.facebook.com/tr?id=461164097604985&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+</div>    <script>
+        require(['jquery','weltpixel_persistentLayer', 'weltpixel_gtm', 'Magento_Customer/js/customer-data'],
+            function ($, wpPersDl, wpgtm, customerData) {
+                $( document ).ajaxComplete(function( event, xhr, settings ) {
+                    if (settings.url.search('/customer\/section\/load/') > 0) {
+                        var response = xhr.responseJSON;
+                        if (response.gtm) {
+                            var dataLayerData = $.parseJSON(response.gtm.datalayer);
+                            for (index in dataLayerData) {
+                                window.dataLayer.push(dataLayerData[index]);
+                            }
+                        }
+                    }
+                });
+                var wpPersDlOptions = {'storageExpiryTime' : 30 };
+                var wpGtmOptions = {
+                    'enabled' : 1,
+                    'persDataLayer' : wpPersDl
+                };
+                wpPersDl.init(wpPersDlOptions);
+                wpgtm.trackPromotion(wpGtmOptions);
+                customerData.invalidate(['gtm']);
+            });
+    </script>
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"cf29524d6e","applicationID":"419333178","transactionName":"MQZaZERYCENSWk1ZXghMeVNCUAleHFpMQ0UJDl1CGVgFU1xMV0QeBRFdUUJc","queueTime":0,"applicationTime":15541,"atts":"HUFZEgxCG00=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
