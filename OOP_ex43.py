@@ -2,9 +2,6 @@ from sys import exit
 
 #-------------------- Scene -------------------------------------------------
 class Scene(object):
-    def __init__(self):
-        pass
-    
     def enter(self):
         pass
 
@@ -18,7 +15,7 @@ class Corridor (Scene):
         
 class LeaserWeapon (Scene):
     def enter(self):
-         print("This iw here the hero gest a neutron..")
+         print("This is here the hero gest a neutron..")
         
 class Bridge (Scene):
     def enter(self):
@@ -62,9 +59,9 @@ if Star_NewGame.upper() == 'Y':
  
     print(Scenario_List[int(Scenario_Option) - 1])
     Scene_Selection = Scenario_List[int(Scenario_Option) - 1]
-    Scene_Selection
- 
-#    Start_Scenario = Map('Central_corridor')
+    Start_Scenario = Scene_Selection()
+    Start_Scenario.enter()
+
 #    Game = Engine(Start_Scenario)
 #    Game.play();
     
