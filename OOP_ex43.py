@@ -154,7 +154,7 @@ class Engine(object):
         current_scene.enter()                               #If the loop has ended (current_scene = 'Finished') the player has won
         
 #-------------------- Map ----------------------------------------------------
-class Map(object):
+class Map():
 
     Scenes_Relationship = {
     'Central_Corridor' : Corridor(),
@@ -168,7 +168,7 @@ class Map(object):
     }
 
     def __init__(self, start_scene):
-        self.start_scene = start_scene;
+        self.start_scene = start_scene
         
     def next_scene(self, scene_name):
         conv = Map.Scenes_Relationship[scene_name]
